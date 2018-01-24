@@ -1,0 +1,161 @@
+/* Universal Styles */
+
+html {
+  width: 100%;
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4em;
+  color: white;
+}
+
+/* Header */
+header {
+    background-color: black;
+}
+
+.headerbox {
+  top: 0;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  padding: 0.66rem 0;
+  align-items: center;
+}
+
+header img {
+  padding: 0 1rem 0 0.5rem;
+  height: 1.5rem;
+}
+
+header h1 {
+  padding: 0.66rem 0.5rem;
+  font-size: 1rem;
+}
+
+/* Main Content Container */
+
+.mainBanner {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.innerBanner {
+  top: 9em;
+  background-color: black;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+}
+
+.innerBanner h2 {
+  font-weight: bold;
+}
+
+.innerBanner h4 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+  font-weight: bold;
+}
+
+nav {
+  background-color: firebrick;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 0;
+  list-style: none;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.products .product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .product img {
+  max-width: 8em;
+}
+
+.products h3 {
+  background-color: black;
+  text-align: center;
+  padding: 0.5em;
+  display: block;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.info {
+  width: 35%;
+}
+
+.info h3 {
+  background-color: black;
+  padding: 1rem 1rem 2rem 0;
+}
+
+.info h5 {
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  height: 5rem;
+  margin: 4rem 0 0 0;
+  padding: 5em 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navLarge,
+  .Glasses {
+    display: none;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+  
+  .products .product {
+    width: 47%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .navSmall {
+    display: none;
+  }
+}
